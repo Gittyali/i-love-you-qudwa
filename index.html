@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You Qudwa Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="triggerBox">
+            Click to Show Love!
+        </div>
+        <div class="message" id="loveMessage">
+            <h1 class="pulse">I LOVE YOU QUDWA!</h1>
+            <div class="flowers-left">
+                <div class="flower"></div>
+                <div class="flower"></div>
+            </div>
+            <div class="flowers-right">
+                <div class="flower"></div>
+                <div class="flower"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('triggerBox').addEventListener('click', function() {
+            document.getElementById('loveMessage').classList.add('show');
+        });
+    </script>
+</body>
+</html>
